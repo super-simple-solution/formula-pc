@@ -1,25 +1,14 @@
 {
+  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "npm",
-      "label": "Start Webpack Dev",
-      "script": "start:renderer",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
+      "label": "start .debug.script.mjs",
+      "type": "shell",
+      "command": "node .vscode/.debug.script.mjs",
       "isBackground": true,
-      "problemMatcher": {
-        "owner": "custom",
-        "pattern": {
-          "regexp": "____________"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "Compiling\\.\\.\\.$",
-          "endsPattern": "(Compiled successfully|Failed to compile)\\.$"
-        }
-      }
+      "problemMatcher": []
     }
   ]
 }
