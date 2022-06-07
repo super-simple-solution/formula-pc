@@ -49,5 +49,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  content: ['./packages/renderer/public/**/*.html', './packages/renderer/src/**/*.{js,jsx,ts,tsx,vue}'],
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
 }

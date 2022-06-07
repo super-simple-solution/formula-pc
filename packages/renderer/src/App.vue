@@ -4,7 +4,10 @@
 </script>
 
 <template>
-  <div class="logo-box">
-    <div class="text-blue-600">abc</div>
+  <div>
+    <div class="flex bg-midnight text-tahiti">
+      <div>abc</div>
+      <div>ddd</div>
+    </div>
   </div>
 </template>

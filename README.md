@@ -1,11 +1,5 @@
 # electron-vite-vue
-
-[![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ae3863e3-1aec-4eb1-8f9f-1890af56929d/deploy-status)](https://app.netlify.com/sites/electron-vite/deploys)
-![GitHub license](https://img.shields.io/github/license/caoxiemeihao/electron-vite-vue?style=flat)
-![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/electron-vite-vue?color=fa6470&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/caoxiemeihao/electron-vite-vue?style=flat)
-
+提示：先运行pnpm prebuild
 
 **English | [简体中文](README.zh-CN.md)**
 

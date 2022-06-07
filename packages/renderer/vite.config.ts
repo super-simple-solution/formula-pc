@@ -24,6 +24,8 @@ const pathMap = {
 }
 
 export default defineConfig({
+  mode: process.env.NODE_ENV,
+  root: __dirname,
   base: './',
   build: {
     outDir: '../../dist/renderer',
@@ -57,7 +59,7 @@ export default defineConfig({
     vueJsx(),
     Components({
       dts: true,
-      dirs: ['src/components'],
+      dirs: [path.resolve(__dirname, 'src/components')],
       resolvers: [
         ElementPlusResolver({
           importStyle: 'sass',
@@ -66,7 +68,7 @@ export default defineConfig({
     }),
     createSvgIconsPlugin({
       // Specify the icon folder to be cached
-      iconDirs: [path.resolve(process.cwd(), 'src/icons')],
+      iconDirs: [path.resolve(__dirname, 'src/icons')],
       // Specify symbolId format
       symbolId: 'icon-[dir]-[name]',
     }),
@@ -87,11 +89,11 @@ export default defineConfig({
       ],
       eslintrc: {
         enabled: true, // Default `false`
-        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+        filepath: path.resolve(__dirname, './.eslintrc-auto-import.json'), // Default `./.eslintrc-auto-import.json`
         globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
       resolvers: [() => null],
-      dts: './auto-imports.d.ts',
+      dts: path.resolve(__dirname, './auto-imports.d.ts'),
     }),
     resolve(
       /**
@@ -127,7 +129,7 @@ export default defineConfig({
   ],
   css: {
     postcss: {
-      plugins: [tailwind(), autoprefixer()],
+      plugins: [tailwind(path.resolve(__dirname, './tailwind.config.ts')), autoprefixer()],
     },
   },
 })
