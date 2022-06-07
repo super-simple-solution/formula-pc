@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: '../../dist/main',
     emptyOutDir: true,
-    minify: process.env./* from mode option */NODE_ENV === 'production',
+    minify: process.env./* from mode option */ NODE_ENV === 'production',
     sourcemap: true,
     lib: {
       entry: 'index.ts',
@@ -18,6 +18,7 @@ export default defineConfig({
       external: [
         'electron',
         ...builtinModules,
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         ...Object.keys(pkg.dependencies || {}),
       ],
