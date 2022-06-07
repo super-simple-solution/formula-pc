@@ -119,13 +119,10 @@ export default defineConfig({
           // CJS lib name
           'serialport',
           // export memebers
-          [
-            'SerialPort',
-            'SerialPortMock',
-          ],
+          ['SerialPort', 'SerialPortMock'],
           { format: 'cjs' },
         ),
-      }
+      },
     ),
   ],
   css: {

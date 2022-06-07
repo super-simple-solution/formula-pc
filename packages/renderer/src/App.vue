@@ -9,4 +9,3 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="text-blue-600">abc</div>
   </div>
 </template>
-
