@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: instal",
+      "code": "ENOENT",
+      "stack": "Error: not found: instal\n    at getNotFoundError (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:41493:51)\n    at Function.whichSync [as sync] (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:41570:13)\n    at getCommandAbsolutePathSync (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43135:44)\n    at default_1 (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43144:32)\n    at C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:176351:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "D:\\wuxue\\formula-pc",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: instal",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: instal\n    at getNotFoundError (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:41493:51)\n    at Function.whichSync [as sync] (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:41570:13)\n    at getCommandAbsolutePathSync (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43135:44)\n    at default_1 (C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43144:32)\n    at C:\\Users\\wuxue\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:176351:39"
+    }
+  }
+}
