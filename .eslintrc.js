@@ -1,21 +1,13 @@
 module.exports = {
-  root: false,
+  root: true,
   env: {
     es2020: true,
     node: true,
     browser: true,
   },
-  plugins: ['vue', 'prettier'],
-  extends: [
-    'plugin:vue/vue3-recommended',
-    'eslint:recommended',
-    '@vue/typescript/recommended',
-    'prettier',
-    './.eslintrc-auto-import.json',
-  ],
+  plugins: ['@typescript-eslint', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   rules: {
-    'vue/require-default-prop': 'off',
-    'vue/no-v-html': 'off',
     'prefer-rest-params': 'off',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': ['error'],
@@ -24,7 +16,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': ['off'],
     quotes: [1, 'single'], //引号类型 `` "" ''
     semi: [2, 'never'], // 语句强制分号结尾
-    'vue/multi-word-component-names': 0,
     'prettier/prettier': [
       'error',
       {
@@ -45,13 +36,12 @@ module.exports = {
       },
     ],
   },
-  parser: 'vue-eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-      jsx: true,
     },
   },
 }
